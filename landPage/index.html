@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.ico">
+    <title>Landing | Page</title>
+</head>
+<body>
+    <header>    
+        <img class="logo" src="image/logo.png" alt="">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="nav" onclick="toggleMenu();">
+            <li> <a href="#">COURSES</a> </li>
+            <li> <a  href="#">CODE</a> </li>
+            <li> <a  href="#">DISCUSS</a> </li>
+            <li> <a  href="#">TOP LEARNER</a> </li>
+            <li> <a  href="#">BLOG</a> </li>
+            <li><a class="log-btn" href="#">PROFILE</a></li>
+        </ul>     
+    </header>
+
+    <main id="main">
+        <section class="first">
+            <div class="sec-1">
+                <div class="text-1">
+                    <h1>Learn to code <br> <strong>for free!</strong></h1>
+                    <h3>interactive lessons, "on-the-go" <br> practice, peer support.</h3>
+                    <a class="learn-btn" href="#">Start Learning Now!</a>
+                </div>
+
+                <div class="img-1">
+                    <img src="image/home-header-boy.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+
+        <div id="home-courses">
+            <div class="home-courses-wrapper">
+            <div class="home-courses">
+            <div class="home-courses__course-container" data-category="">
+            <a class="home-courses__course-container__link" href="#">
+            <div style="background-color: #204766" class="home-courses__course-container__icon-container">
+            <img class="home-courses__course-container__icon-container__icon" src="image/1073.png" alt="not found" />
+            </div>
+            <div class="home-courses__course-container__info">
+            <div class="home-courses__course-container__info-inner">
+            <span class="home-courses__course-container__info__header">
+            Python 3
+            </span>
+            <span class="home-courses__course-container__info__description">
+            Learn Python, one of today&#39;s most in-demand programming languages on-the-go! Practice writing Python code, collect points, &amp; show off your skills now!
+            </span>
+            </div>
+            <span class="home-courses__course-container__info__btn">
+            Take This Course
+            </span>
+            </div>
+            </a>
+            </div>
+            <div class="home-courses__course-container" data-category="">
+            <a class="home-courses__course-container__link" href="#">
+            <div style="background-color: #406185" class="home-courses__course-container__icon-container">
+            <img class="home-courses__course-container__icon-container__icon" src="image/1051.png" alt="not found" />
+            </div>
+            <div class="home-courses__course-container__info">
+            <div class="home-courses__course-container__info-inner">
+            <span class="home-courses__course-container__info__header">
+            C++
+            </span>
+            <span class="home-courses__course-container__info__description">
+            Our C++ tutorial covers basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes, objects, inheritance, and polymorphism.
+            </span>
+            </div>
+            <span class="home-courses__course-container__info__btn">
+            Take This Course
+            </span>
+            </div>
+            </a>
+            </div>
+            <div class="home-courses__course-container" data-category="">
+            <a class="home-courses__course-container__link" href="#">
+            <div style="background-color: #263B4A" class="home-courses__course-container__icon-container">
+            <img class="home-courses__course-container__icon-container__icon" src="image/1068.png" alt="not found" />
+            </div>
+            <div class="home-courses__course-container__info">
+            <div class="home-courses__course-container__info-inner">
+            <span class="home-courses__course-container__info__header">
+            Java
+            </span>
+            <span class="home-courses__course-container__info__description">
+            With our interactive Java course, you’ll learn object-oriented Java programming and have the ability to write clear and valid code in almost no time at all.
+            </span>
+            </div>
+            <span class="home-courses__course-container__info__btn">
+            Take This Course
+            </span>
+            </div>
+            </a>
+            </div>
+            </div>
+            <a href="#" class="home-courses__view-all">View All Our Courses &#8594;</a>
+            </div>
+            </div>
+    </main>
+    <script type="text/javascript">
+        function toggleMenu () {
+            const toggle = document.querySelector('.toggle');
+            const nav = document.querySelector('.nav');
+            toggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
